@@ -32,13 +32,14 @@
 @HBaseInfo(tableName = "product", tableNameSpace = "ay")
 public class ProductInfo implements IFieldCheck, Serializable {
 
-    @HBaseFieldName(PackType = EnumPack.PACK_BYTES, HBaseKey = "i")
+    //family 默认值是r 如果是这个可以不配置
+    @HBaseFieldName(PackType = EnumPack.PACK_BYTES, HBaseKey = "i", family = "e")
     private String id;
     
-    @HBaseFieldName(PackType = EnumPack.PACK_BYTES, HBaseKey = "t")
+    @HBaseFieldName(PackType = EnumPack.PACK_BYTES, HBaseKey = "t", family = "e")
     private String title;
     
-    @HBaseFieldName(PackType = EnumPack.PACK_BYTES, HBaseKey = "p")
+    @HBaseFieldName(PackType = EnumPack.PACK_BYTES, HBaseKey = "p", family = "e")
     private String price;
     
     //这个为了允许实体里面的部分字段为空
