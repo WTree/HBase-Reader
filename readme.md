@@ -1,4 +1,4 @@
-使用这个库，读取HBase时可以像JPB的方式一样去获取数据，使用api相关的工程
+使用这个库，读取HBase时可以像JPA的方式一样去获取数据，使用api相关的工程
 
 使用教程
 
@@ -9,20 +9,19 @@
 [![](https://jitpack.io/v/WTree/HBase-Reader.svg)](https://jitpack.io/#WTree/HBase-Reader)
 
 ```
-	<repositories>
-		<repository>
-		    <id>jitpack.io</id>
-		    <url>https://jitpack.io</url>
-		</repository>
-	</repositories>
+<repositories>
+     <repository>
+	<id>jitpack.io</id>
+	    <url>https://jitpack.io</url>
+    </repository>
+</repositories>
 	
 	
-	
-	<dependency>
-	    <groupId>com.github.WTree</groupId>
-	    <artifactId>HBase-Reader</artifactId>
-	    <version>v0.1</version>
-	</dependency>
+<dependency>
+     <groupId>com.github.WTree</groupId>
+     <artifactId>HBase-Reader</artifactId>
+     <version>v0.1</version>
+</dependency>
 	 
 ``` 
 
